@@ -1,3 +1,54 @@
+ltrace (0.7.3-4) unstable; urgency=low
+
+  * Get rid of dh_autoreconf (not needed)
+  * Added "mips" and "mipsel" architectures
+  * Continue after unexpected breakpoint (closes: #649569)
+
+ -- Juan Cespedes <cespedes@debian.org>  Fri, 03 Jan 2014 13:56:53 +0100
+
+ltrace (0.7.3-3) unstable; urgency=low
+
+  * Really add support for armhf
+  * Fix new compilation error on sparc
+
+ -- Juan Cespedes <cespedes@debian.org>  Fri, 03 Jan 2014 10:07:03 +0100
+
+ltrace (0.7.3-2) unstable; urgency=low
+
+  * Build without libunwind to avoid problems in transition
+  * Added support for powerpcspe (closes: #692486)
+  * Added support for armhf
+  * Fix compilation on sparc
+
+ -- Juan Cespedes <cespedes@debian.org>  Thu, 02 Jan 2014 23:06:26 +0100
+
+ltrace (0.7.3-1) unstable; urgency=low
+
+  * New upstream release (closes: #675607), including:
+    + support dlopen()'d libraries (closes: #537781)
+    + support PIE binaries (closes: #614018)
+    + fix -T option (closes: #548400)
+    + use $HOST_CPU instead of $(uname -m) (closes: #457696)
+    + don't hardcode gcc or assume -liberty and -lsupc++ exist (closes: #593639)
+    + support threaded programs (closes: #282068, #591412)
+  * Fix "free(): invalid pointer" crash (closes: #724253)
+  * Fix FTBFS on alpha (closes: #678721)
+  # Added "s390x" to the list of supported archs (closes: #645615)
+  * Fixed dpkg-shlibdeps warning: don't link against
+    libstdc++ or libsupc++ if we have libiberty
+  * Switch to 3.0 (quilt) source format
+  * Standards-Version: 3.9.5
+  * Lintian clean
+
+ -- Juan Cespedes <cespedes@debian.org>  Thu, 02 Jan 2014 18:00:05 +0100
+
+ltrace (0.5.3-2.2) unstable; urgency=medium
+
+  * Non-maintainer upload
+  * Build-depend on libiberty-dev instead of binutils-dev (Closes: #730933)
+
+ -- David Prévot <taffit@debian.org>  Sat, 21 Dec 2013 19:21:35 -0400
+
 ltrace (0.5.3-2.1) unstable; urgency=low
 
   * Non-maintainer upload.

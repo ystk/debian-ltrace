@@ -2,11 +2,11 @@ Source: ltrace
 Section: utils
 Priority: optional
 Maintainer: Juan Cespedes <cespedes@debian.org>
-Standards-Version: 3.8.2
-Build-Depends: cdbs (>= 0.4.23-1.1), debhelper (>= 5), binutils-dev, libelfg0-dev
+Standards-Version: 3.9.5
+Build-Depends: cdbs (>= 0.4.23-1.1), debhelper (>= 7), libiberty-dev, libelfg0-dev, libselinux1-dev
 
 Package: ltrace
-Architecture: i386 arm armeb armel m68k s390 powerpc sparc alpha amd64 ia64 ppc64
+Architecture: alpha amd64 arm armeb armel armhf ia64 i386 mips mipsel powerpc powerpcspe ppc64 s390 s390x sparc
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Tracks runtime library calls in dynamically linked programs
  ltrace is a debugging program which runs a specified command until it
